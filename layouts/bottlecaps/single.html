@@ -1,0 +1,20 @@
+{{ define "main" }}
+<div class="basic transbox">
+    <h1>!!! page under construction !!!</h1>
+    bottlecap..
+    This is my bottlecap collection! Most of these I have collected from the ground throughout the past few years, but some were given to me by people I knew or from drinks I've had!
+    <!-- Sort the collection by color, drink name, CCI Id, or country of origin. -->
+    If you recognize any of the unknown caps, please send me a message at and I will credit you for the find!
+    <div class="gallery">
+    {{ with .Params.Images }}
+        {{ range . }}
+            {{ if .url }}
+                <a href="{{ .url }}" target="_blank"><img src="{{ .src }}"></a>
+            {{ else }}
+                <a><img src="{{ .src }}"></a>
+            {{ end }}
+        {{ end }}
+    {{ end }}
+    </div>
+</div>
+{{ end }}

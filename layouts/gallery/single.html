@@ -1,0 +1,21 @@
+{{ define "main" }}
+    <div class="big-gallery">
+    {{ with .Params.Images }}
+        {{ range . }}
+            <div class="polaroid">
+                <img src="{{ .thumbnail }}" onclick="openModal('{{ .src }}');"></a>
+                <p>{{ .date }}</p>
+                <p>{{ .desc }}</p>
+            </div>
+        {{ end }}
+        </div>
+        
+        {{ partial "back_to_top.html" }}
+    {{ end }}
+    <div id="modal">
+        <div id="modal-content">
+            <span id="close" aria-label="Close modal" onclick="closeModal()">&times;</span>
+            <img id="modal-image" src="">
+        </div>
+    </div>
+{{ end }}

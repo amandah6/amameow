@@ -1,0 +1,29 @@
+#calendar {
+  margin: 1em;
+}
+#calendar table {
+  width: 100%;
+  border: 2px solid var(--c);
+  background-color: var(--b);
+  color: var(--c);
+}
+
+#calendar th {
+  border-style: none;
+  text-align: center;
+}
+
+#calendar td {
+  border: 1px solid var(--c);
+  text-align: center;
+}
+
+#calendar-days {
+  font-weight: bold;
+  background-color: var(--light);
+}
+
+.selected-date {
+  background-color: var(--c);
+  color: var(--b);
+}

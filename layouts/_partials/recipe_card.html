@@ -1,0 +1,36 @@
+{{ $sectionDelim := "<split>" }}
+{{ $sections := split .Content $sectionDelim}}
+
+
+<div id="{{ .Slug }}" class="recipe trans-box">
+    {{ with .Params }}
+        <h1 class="recipe-title">{{ .Title }}</h1>
+        <h3 class="recipe-date">{{ .dateFirstMade }}</h3>
+        {{ if and .source (ne .source "")}}
+            <a href="{{ .source }}" class="recipe-source">Source</a>
+        {{ end }}
+        {{ if and .imgUrl (ne .imgUrl "") }}
+            <img src="{{ .imgUrl }}">
+        {{ end }}
+    {{- end -}}
+    {{ range $i, $v := $sections }}
+        {{ if eq $i 0}}
+            <div class="recipe-ingredients">
+                {{- $v | safeHTML -}}
+            </div>
+
+        {{ else if eq $i 1}}
+            <div class="recipe-directions">
+                {{- $v | safeHTML -}}
+            </div>
+
+        {{ else if eq $i 2}}
+            <div class="recipe-notes">
+                {{- $v | safeHTML -}}
+            </div>
+
+        {{ else }}
+            {{- $v | safeHTML -}}
+        {{ end }}
+    {{ end }}
+</div>

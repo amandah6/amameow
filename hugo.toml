@@ -1,0 +1,7 @@
+baseURL = 'https://amameow.neocities.org/'
+locale = 'en-us'
+title = 'amameow'
+[markup]
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            unsafe = true

@@ -1,0 +1,15 @@
+.icon-card {
+    display: flex;
+}
+.icon-card img {
+  max-width: 200px;
+  height: auto;
+  max-height: 200px;
+  margin: 2em;
+}
+
+@media screen and (max-width: 1200px) {
+    .icon-card {
+        flex-direction: column;
+    }
+}

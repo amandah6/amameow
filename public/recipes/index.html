@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/nav.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/calendar.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/icon_card.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/recipes.css" rel="stylesheet" type="text/css" media="all">
+    <link href="/css/modal.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+    <img src="/hamburger-svgrepo-com.svg" id="nav-open" aria-label="Toggle Navbar">  
+    <div class="grid-container">
+      <div id="left-sidebar" class="sidebar">
+        <nav id="sidebar-inner" class="sidebar-inner trans-box">
+          <a href="/" class="nav">Home</a>
+          <a href="/about" class="nav">About</a>
+          <h3>me</h3>
+          <a href="/bottlecaps" class="nav">Bottlecaps</a>
+          <a href="/projects" class="nav">Projects</a>
+          <a href="/recipes" class="nav">Recipes</a>
+          <a href="/gallery" class="nav">Gallery</a>
+          <h3>you</h3>
+          <a href="/links" class="nav">Links</a>
+          <a href="/contact" class="nav">Contact Me</a>
+        </nav>
+        <div id="calendar">
+            <table id="table-calendar">
+              <tr id="calendar-month-year">
+                <th colspan="7"><button id="calendar-prev">&lt</button><span id="month-year-string"></span><button id="calendar-next">&gt</button></th>
+              </tr>
+              <tr id="calendar-days">
+                <td>S</td>
+                <td>M</td>
+                <td>T</td>
+                <td>W</td>
+                <td>T</td>
+                <td>F</td>
+                <td>S</td>
+              </tr>
+            </table>
+        </div>
+        
+        <div id="reading">
+            
+        </div>
+    </div>
+
+    <div id="main-content">
+      
+<h1>Recipes</h1>
+<select id="jump-selector" onchange="jumpTo(this.selectedOptions[0].value);" onblur="this.selectedIndex = -1;">
+    
+  <option>-</option>
+    
+    <option value="banana_bread">Banana bread</option>
+    
+    <option value="lemon_bars">Chef John&#39;s Lemon Bars</option>
+    
+    <option value="cornbread">Cornbread</option>
+    
+    <option value="lemon_shortbread_cookies">Lemon Shortbread Cookies</option>
+    
+    <option value="oatmeal_cookies">Oatmeal Cookies</option>
+    
+    <option value="peanut_butter_cookies">Peanut Butter Cookies</option>
+    
+
+</select>
+
+<div class="recipe-container">
+    
+  <div class="basic">
+    <a href="https://amameow.neocities.org/recipes/banana_bread/" target="_blank" class="new-tab">Open in New Tab</a>
+
+
+
+<div id="banana_bread" class="recipe trans-box">
+    
+        <h1 class="recipe-title">Banana bread</h1>
+        <h3 class="recipe-date"></h3>
+        
+        
+        
+            <div class="recipe-ingredients"><h3 id="ingredients">Ingredients</h3>
+<ul>
+<li>250g all purpose flour</li>
+<li>1 tsp baking soda</li>
+<li>1/4 tsp salt</li>
+<li>1/2 tsp ground cinnamon
+<br></br></li>
+<li>1/2 cup unsalted butter (softened)</li>
+<li>150g brown sugar
+<br></br></li>
+<li>2 large eggs (room temperature)
+<br></br></li>
+<li>80g sour cream or greek yogurt</li>
+<li>345g bananas (usually 3 bananas)</li>
+<li>1 tsp vanilla extract
+<br></br></li>
+<li>90g mix-ins (chopped nuts and/or dark chocolate chips)</li>
+</ul>
+</div>
+
+        
+    
+        
+            <div class="recipe-directions">
+<h3 id="directions">Directions</h3>
+<ol>
+<li>Combine flour, baking soda, salt, and ground cinnamon in a bowl</li>
+<li>Cream together butter and brown sugar in a separte bowl</li>
+<li>Beat in 2 large eggs, one at a time</li>
+<li>Mash bananas in a third bowl, mix in sour cream and vanilla</li>
+<li>Thoroughly combine banana mixture with butter, sugar, egg mixuture</li>
+<li>Fold in flour mixture until just combined</li>
+<li>Add mix-ins until just combined, do not overmix</li>
+<li>Spray loaf pan with non-stick cooking spray and dump batter in</li>
+<li>Bake at <strong>350ºF for 60-65 minutes</strong> on <strong>oven rack in the lower 3rd position</strong></li>
+</ol>
+</div>
+
+        
+    
+        
+            <div class="recipe-notes">
+<h3 id="notes">Notes</h3>
+<ul>
+<li>I make this almost every Sunday</li>
+<li>I use light and dark brown sugar interchangeably in this recipe, can&rsquo;t really feel the difference</li>
+<li>Life hack: soften butter in the microwave, warm up eggs by putting in warm/hot water</li>
+</ul>
+</div>
+
+        
+    
+        
+    
+</div></div>  
+  <div class="basic">
+    <a href="https://amameow.neocities.org/recipes/lemon_bars/" target="_blank" class="new-tab">Open in New Tab</a>
+
+
+
+<div id="lemon_bars" class="recipe trans-box">
+    
+        <h1 class="recipe-title">Chef John&#39;s Lemon Bars</h1>
+        <h3 class="recipe-date">12/30/25</h3>
+        
+            <a href="https://www.allrecipes.com/recipe/232799/chef-johns-lemon-bars/" class="recipe-source">Source</a>
+        
+        
+        
+            <div class="recipe-ingredients"><h3 id="ingredients">Ingredients</h3>
+<p><strong>Shortbread crust</strong></p>
+<ul>
+<li>120g all purpose flour</li>
+<li>1/2 cup unsalted butter (softened)
+<br></br></li>
+<li>28.25g confectioner&rsquo;s sugar</li>
+<li>1/4 tsp vanilla extract</li>
+<li>1/4 tsp salt</li>
+</ul>
+<p><strong>Lemon curd</strong></p>
+<ul>
+<li>2 large eggs</li>
+<li>1 egg yolk
+<br></br></li>
+<li>2 tbsp all purpose flour</li>
+<li>198g granulated sugar
+<br></br></li>
+<li>1/4 cup lemon juice</li>
+<li>1 tbsp lemon zest</li>
+</ul>
+</div>
+
+        
+    
+        
+            <div class="recipe-directions">
+<h3 id="directions">Directions</h3>
+<p><strong>Shortbread crust</strong></p>
+<ol>
+<li>Mash butter and flour together in a bowl until thoroughly combined</li>
+<li>Mix in confectioner&rsquo;s sugar, vanilla, and salt until fully combined</li>
+<li>Grease an 8x8 cake pan and press crust mixture into the pan, prick bottom with a fork</li>
+<li>Bake at 350ºF for 22 minutes</li>
+</ol>
+<p>Wait for crust to finish baking before starting next step <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<p><strong>Lemon curd</strong><br>
+5. In a large bowl, beat together 2 large eggs and 1 egg yolk
+6. Whisk in granulated sugar and 2 tbsp of all-purpose flour until smooth <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>
+7. Whisk in lemon juice an lemon zest for 2 minutes
+8. Pour over cooled crust, bake at 350ºF for 25 minutes</p>
+</div>
+
+        
+    
+        
+            <div class="recipe-notes">
+<h3 id="notes">Notes</h3>
+<ul>
+<li>This recipe produces about a 1:1 ratio of crust to lemon, which I find perfect</li>
+</ul>
+</div>
+
+        
+    
+        
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>If you prepare the lemon curd while the crust is baking and dump it right into the hot crust, you will cook the curd touching the crust too fast and it&rsquo;ll be eggy&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>I like lemon bars more lemony and less sweet, I&rsquo;ve been able to reduce the granulated sugar by about -40g and replace it with a tablespoon or so of flour and a splash more lemon juice without affecting the texture noticeabley&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+    
+</div></div>  
+  <div class="basic">
+    <a href="https://amameow.neocities.org/recipes/cornbread/" target="_blank" class="new-tab">Open in New Tab</a>
+
+
+
+<div id="cornbread" class="recipe trans-box">
+    
+        <h1 class="recipe-title">Cornbread</h1>
+        <h3 class="recipe-date"></h3>
+        
+        
+        
+            <div class="recipe-ingredients"><h3 id="ingredients">Ingredients</h3>
+<ul>
+<li>150g all-purpose flour</li>
+<li>117g yellow cornmeal</li>
+<li>49.5g granulated sugar</li>
+<li>2 tsp baking powder</li>
+<li>1/2 tsp salt
+<br></br></li>
+<li>1 1/4 cups whole milk</li>
+<li>1/4 cup vegetable oil</li>
+<li>1 large egg (beaten)</li>
+</ul>
+</div>
+
+        
+    
+        
+            <div class="recipe-directions">
+<h3 id="directions">Directions</h3>
+<ol>
+<li>Combine flour, cornmeal, sugar, baking powder, and salt in a large bowl</li>
+<li>In a measuring cup, measure out milk, vegetable oil, and beat in 1 egg</li>
+<li>Pour the wet ingredients into the dry, mixing until combined, don&rsquo;t overmix</li>
+<li>Spray an 8x8 or 9x9 inch cake pan with non-stick cooking spray</li>
+<li>Pour in batter and bake for <strong>25-30 min at 400ºF</strong></li>
+</ol>
+</div>
+
+        
+    
+        
+            <div class="recipe-notes">
+<h3 id="notes">Notes</h3>
+<ul>
+<li>Goes hard with chili or baked beans + weens</li>
+<li>I add more sugar for sweet cornbread, add shredded cheese, green onion, and minced garlic for a savory bread</li>
+<li>Moist and buttery without soaking cornmeal! I overbaked it once and it was very dry though</li>
+<li>I rarely buy milk, so a lot of the time I mix 1/2 cup half n half with 3/4 cups of water to make &ldquo;whole milk&rdquo; and it turns out okay</li>
+</ul>
+</div>
+
+        
+    
+        
+
+    
+</div></div>  
+  <div class="basic">
+    <a href="https://amameow.neocities.org/recipes/lemon_shortbread_cookies/" target="_blank" class="new-tab">Open in New Tab</a>
+
+
+
+<div id="lemon_shortbread_cookies" class="recipe trans-box">
+    
+        <h1 class="recipe-title">Lemon Shortbread Cookies</h1>
+        <h3 class="recipe-date">3/8/26</h3>
+        
+            <a href="https://scientificallysweet.com/lemon-shortbread-cookies/" class="recipe-source">Source</a>
+        
+        
+        
+            <div class="recipe-ingredients"><h3 id="ingredients">Ingredients</h3>
+<ul>
+<li>1/2 cup butter (softened)</li>
+<li>65g granulated sugar</li>
+<li>zest of 1 medium lemon</li>
+</ul>
+<br>
+<ul>
+<li>1 tbsp lemon juice</li>
+<li>1/2 tsp vanilla extract</li>
+</ul>
+<br>
+<ul>
+<li>180g all purpose flour</li>
+<li>1/4 tsp salt</li>
+</ul>
+</div>
+
+        
+    
+        
+            <div class="recipe-directions">
+<h3 id="directions">Directions</h3>
+<ol>
+<li>Cream together butter, granulated sugar and lemon zest</li>
+<li>Mix in lemon juice and vanilla extract until fully combined</li>
+<li>Add flour and salt and mix until just combined</li>
+<li>Flatten dough into a disk, wrap and chill in the freezer for 15-30 minutes or until slightly firm</li>
+<li>Roll dough between two sheets of parchment paper until 1/4 in. thick, cut into 2 in. squares or use a 2 in. diameter cookie cutter</li>
+<li>Place on baking sheet 2 in. apart and bake at 325ºF for 14-16 minutes or until lightly browned on the edges</li>
+</ol>
+</div>
+
+        
+    
+        
+            <div class="recipe-notes">
+<h3 id="notes">Notes</h3>
+<ul>
+<li>I love these cookies!</li>
+<li>Bake them slightly longer for melt-in-your-mouth texture</li>
+</ul>
+</div>
+
+        
+    
+        
+
+    
+</div></div>  
+  <div class="basic">
+    <a href="https://amameow.neocities.org/recipes/oatmeal_cookies/" target="_blank" class="new-tab">Open in New Tab</a>
+
+
+
+<div id="oatmeal_cookies" class="recipe trans-box">
+    
+        <h1 class="recipe-title">Oatmeal Cookies</h1>
+        <h3 class="recipe-date"></h3>
+        
+        
+        
+            <div class="recipe-ingredients"><h3 id="ingredients">Ingredients</h3>
+<ul>
+<li>125g all purpose flour</li>
+<li>1/2 tsp baking soda</li>
+<li>1/4 tsp baking powder</li>
+<li>1/2 tsp salt</li>
+<li>1/2 tsp ground cinnamon
+<br></br></li>
+<li>1/2 cup unsalted butter (softened)</li>
+<li>100g granulated sugar</li>
+<li>110g light brown sugar
+<br></br></li>
+<li>1 large egg
+<br></br></li>
+<li>1tsp vanilla extract</li>
+<li>120g oatmeal</li>
+<li>180g mix-ins (chocolate chips, nuts, etc)</li>
+</ul>
+</div>
+
+        
+    
+        
+            <div class="recipe-directions">
+<h3 id="directions">Directions</h3>
+<ol>
+<li>Combine flour, baking soda, baking powder, salt, and ground cinnamon in a bowl</li>
+<li>Cream together butter, granulated sugar, and brown sugar in a separte bowl</li>
+<li>Beat in 1 large egg and vanilla extract</li>
+<li>Mix in flour mixture until just combined</li>
+<li>Add oatmeal and mix-ins until just combined, do not overmix</li>
+<li>Roll into 2 tbsp balls and place on baking sheet 2 inches apart and bake at 375ºF for 8-10 minutes</li>
+</ol>
+</div>
+
+        
+    
+        
+            <div class="recipe-notes">
+<h3 id="notes">Notes</h3>
+<ul>
+<li>Yummy with chocolate chips but also very yummy without</li>
+<li>Have only ever made once, but tasty! Pretty sweet, would make with less sugar next time</li>
+</ul>
+</div>
+
+        
+    
+        
+    
+</div></div>  
+  <div class="basic">
+    <a href="https://amameow.neocities.org/recipes/peanut_butter_cookies/" target="_blank" class="new-tab">Open in New Tab</a>
+
+
+
+<div id="peanut_butter_cookies" class="recipe trans-box">
+    
+        <h1 class="recipe-title">Peanut Butter Cookies</h1>
+        <h3 class="recipe-date"></h3>
+        
+        
+        
+            <div class="recipe-ingredients"><h3 id="ingredients">Ingredients</h3>
+<ul>
+<li>128g peanut butter</li>
+<li>8 tablespoons butter (softened)</li>
+<li>146.5g brown sugar</li>
+<li>50g granulated sugar</li>
+<li>6.5g vanilla extract
+<br></br></li>
+<li>1 large egg (room temp)
+<br></br></li>
+<li>1/2 teaspoon baking powder</li>
+<li>1/2 teaspoon salt</li>
+<li>152g all purpose flour</li>
+</ul>
+</div>
+
+        
+    
+        
+            <div class="recipe-directions">
+<h3 id="directions">Directions</h3>
+<ul>
+<li>Cream together peanut butter, butter, brown sugar, granulated sugar, and vanilla extract</li>
+<li>Beat in 1 large egg</li>
+<li>Mix in flour, baking powder, and salt until combined</li>
+<li>Roll into 2 tbsp balls and place on baking sheet 2 inches apart and bake at <strong>350ºF for 12-13 minutes</strong></li>
+</ul>
+</div>
+
+        
+    
+        
+            <div class="recipe-notes">
+<h3 id="notes">Notes</h3>
+<ul>
+<li>Usually makes me 13-17 cookies</li>
+<li>Tap the baking sheet onto the edge of the oven a couple times if the cookies look really puffed up, lets them deflate and develop the cracked look?</li>
+<li>Have made multiple times! Soft, chewy, grocery store cookie vibes!</li>
+</ul>
+</div>
+
+        
+    
+        
+    
+</div></div></div>
+<button id="back-to-top" onclick="window.scrollTo(0, 0)">Back to Top</button>
+
+    </div>
+  </div>
+      
+    <footer>
+      
+      <span>
+        Made by me, built with <a href="https://gohugo.io/">Hugo</a>
+      </span>
+      <br>
+      <span>Squared paper background image via <a href="https://www.freepik.com/free-photo/squared-paper-texture_932591.htm">Freepik</a></span>
+      <br>
+      <span>Mikura Amelia and Wandering Island belong to Kenji Tsuruta</span>
+    </footer>
+
+    
+    
+    
+    
+    
+    <script src="https://amameow.neocities.org/calendar.min.js"></script>
+    <script src="https://amameow.neocities.org/ajax-loader.min.js"></script>
+    <script src="https://amameow.neocities.org/script.min.js"></script>
+    <script src="https://amameow.neocities.org/js/modal.js" defer></script>
+    <script src="https://amameow.neocities.org/js/jump-to.js" defer></script>
+  </body>
+</html>
