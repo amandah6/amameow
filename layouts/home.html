@@ -1,8 +1,28 @@
 {{ define "main"}}
-<div class="basic trans-box">
+<div class="basic middle-content trans-box">
    <div class="trans-box">
         {{ .Content }}
     </div>
 </div>
-<div class="right-spacer"></div>
+{{ end }}
+
+{{ define "right" }}
+<div class="updates">
+    <h2>Updates</h2>
+    <div class="update">
+        04-07-2026 4:19PM
+        <br>
+        first post is up! read it <a href='{{ absURL "projects/my-first-post/"}}'>here</a>
+    </div>
+     <div class="update">
+        04-07-2026 3:46PM
+        <br>
+        added a <a href="https://amameow.atabook.org/">guestbook</a>! say hi :3
+    </div>
+    <div class="update">
+        04-07-2026 1:12AM
+        <br>
+        update 1: i'm adding an updates box
+    </div>
+</div>
 {{ end }}

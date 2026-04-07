@@ -1,0 +1,12 @@
+{{ define "main"}}
+<div class="basic middle-content trans-box">
+    <div class="trans-box">
+        <div class="post-content">
+            <h1>{{ .Title }}</h1>
+            <h3>{{ .Date.Format "Jan 2, 2006" }}</h3>
+            {{ .Content }}
+        </div>
+    </div>
+</div>
+<div class="right-spacer"></div>
+{{ end }}

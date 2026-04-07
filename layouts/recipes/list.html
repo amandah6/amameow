@@ -1,18 +1,20 @@
 {{ define "main" }}
-<h1>Recipes</h1>
-{{ with partial "jump_selector" . }}
-  <option>-</option>
-    {{ range .Pages }}
-    <option value="{{ .Slug }}">{{ .Title }}</option>
-    {{ end }}
-{{ end }}
-<div class="recipe-container">
-  {{ range .Pages }}  
-  <div class="basic">
-    <a href="{{ .Permalink }}" target="_blank" class="new-tab">Open in New Tab</a>
-    {{- partial "recipe_card.html" . -}}
+<div class="middle-content">
+  <h1>Recipes</h1>
+  {{ with partial "jump_selector" . }}
+    <option>-</option>
+      {{ range .Pages }}
+      <option value="{{ .Slug }}">{{ .Title }}</option>
+      {{ end }}
+  {{ end }}
+  <div class="recipe-container">
+    {{ range .Pages }}  
+    <div class="basic">
+      <a href="{{ .Permalink }}" target="_blank" class="new-tab">Open in New Tab</a>
+      {{- partial "recipe_card.html" . -}}
+    </div>
+    {{- end -}}
   </div>
-  {{- end -}}
 </div>
 {{ partial "back_to_top.html" }}
 {{ end }}

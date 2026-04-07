@@ -1,5 +1,12 @@
 ---
-title: Contact
+title: Guestbook
 ---
-hello! please use this page to contact me about anything at all!
-it's not finished yet though!
+## Sign my guestbook!
+
+I would love to hear from you!! Please use the link below to say hi! 
+
+<a href="https://amameow.atabook.org/" target="_blank">Click here to post</a>
+
+## View Guestbook (read-only)
+
+<iframe src="https://amameow.atabook.org/"></iframe>

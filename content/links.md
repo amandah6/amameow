@@ -7,6 +7,9 @@ title: Links
 [Hugo survival guide](https://gist.github.com/janert/4e22671044ffb06ee970b04709dd7d81): 
 - I wish I had found this when I first decided to switch to Hugo, helps a lot in explaining the overall design of Hugo and basic terms.
 
+[Go Template Primer](https://markdblackwell.gitlab.io/hugo-docsite-blue/templates/go-templates/)
+- Another useful resource I wish I'd found sooner. Templates can do a lot of things!
+
 [Figuring out JS function scoping within Hugo pages](https://github.com/jmooring/hugo-testing/tree/hugo-forum-topic-47765)
 
 [Exporting JS modules and using them in layouts](https://github.com/gohugoio/hugoTestProjectJSModImports/tree/main)
@@ -19,6 +22,13 @@ title: Links
 
 ## Cool Websites
 [NOAA Sunrise Sunset Calculator](https://gml.noaa.gov/grad/solcalc/)
+
+## Credits
+Squared paper background image via [Freepik](https://www.freepik.com/free-photo/squared-paper-texture_932591.htm)
+
+Mikura Amelia and Wandering Island © Kenji Tsuruta
+
+Madoka Kaname and Puella Magi Madoka Magica © Magica Quartet
 
 ## Buttons
 <a href="https://astrid.tech" target="_blank"><img class="" src="https://s3.us-west-000.backblazeb2.com/nyaabucket/a313cf12a8c46d0262c69cdf8a3accc3b6a2d159b8e1211b7abe30886a212884/astriddottech.png" width="88" height="31" alt="astrid.tech" title="astrid.tech"></a>

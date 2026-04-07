@@ -1,13 +1,13 @@
-nav a:hover {
+.nav :hover {
   opacity: 0.5;
 }
 
-nav a {
+.nav {
   margin-bottom: 10px;
   padding: 0.5em;
 
   transition: opacity 0.5s;
-  color: var(--a);
+  color: var(--c);
   text-decoration: none;
 }
 
@@ -24,12 +24,12 @@ nav a {
   /* don't add horizontal padding, makes navbar visible when width=0 */
   display: flex;
   flex-direction: column;
-  grid-column: 1 / 3;
+  grid-column-end: 3;
 
-  margin-left: 2em;
   width: 200px;
   max-width: 200px;
   overflow-x: hidden;
+  height: fit-content;
 
   transition: margin-top 0.5s, width 0.5s;
 

@@ -21,15 +21,12 @@ Wandering Island, Witch Hat Atelier
 Saving Face (2004)
 {{< /icon_card >}}
 
-<br>
 
-***
+## Mikura <3
 
-<br>
-
-Mikura <3
-
-{{< banner imgSrc=/mikura/mikura_long.png title="mikura: wandering island drinking water">}}
+{{< banner imgSrc=./mikura_long.png title="mikura: wandering island drinking water">}}
+{{< banner imgSrc=./mikura_swim.png title="mikura by the water">}}
+{{< banner imgSrc=./mikura_bar.png title="mikura sitting at the bar">}}
 
 
 

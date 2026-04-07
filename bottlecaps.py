@@ -11,26 +11,28 @@
 import os
 from PIL import Image
 
-path = os.path.abspath("./static/bottlecaps")
+path = os.path.abspath("./static/bottlecaps/images")
 
 def generate_md():
     obj = os.scandir(path)
     fd = os.open("bottlecaps_test.md", os.O_RDWR)
+    count = 0
     for entry in obj:
         if entry.is_file():
             # check if filename is a number between 0-400,000
             filename = entry.name.split('.')[0]
+            # check for hidden files, like .DS_Store
+            if len(filename) > 0:
+                count += 1
+                s = '    - src: "/bottlecaps/images/' + entry.name + '"\n'
+                # if filename is a number, cci id is known, add url
+                if filename.isdigit() and int(filename) < 400000:
+                    s += '      url: "https://crowncaps.info/caps/' + filename + '"\n'
 
-            # if filename is a number, cci id is known, add url
-            if filename.isdigit() and int(filename) < 400000:
-                s = '    - src: "/bottlecaps/' + entry.name + '"\n      url: "https://crowncaps.info/caps/' + filename + '"\n'
-                line = str.encode(s)
-                os.write(fd, line)
-            else if filename[0] != '.':
-                s = '    - src: "/bottlecaps/' + entry.name + '"\n'
                 line = str.encode(s)
                 os.write(fd, line)
     os.close(fd)
+    print("there are " + str(count) + " bottlecaps")
 
 def resize_caps():
     print(path)

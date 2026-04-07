@@ -5,7 +5,6 @@ https://stackoverflow.com/questions/17636528/how-do-i-load-an-html-page-in-a-div
 https://ransei.neocities.org/home
 https://www.youtube.com/watch?v=ZleShIpv5zQ
 */
-const pageCache = {};
 
 export function loadPage(path) {
     fetch(path)
@@ -18,7 +17,6 @@ export function loadPage(path) {
                 // get page title
                 // console.log(newContent.getElementsByTagName("title")[0]);
                 document.getElementsByTagName("title")[0].innerHTML = newContent.getElementsByTagName("title")[0].innerHTML;
-                pageCache[path] = newContent;
                 window.scrollTo(0,0)
             })
             .catch((err) => console.warn(err))

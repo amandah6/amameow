@@ -17,7 +17,7 @@ I no longer actively use social media because it stresses me out! But I still fe
 <!-- <img src="/bebe_computer.png" width="250px" title="bebe: madoka magica wearing headphones using a laptop"> -->
 # About this site
 
-This site was hand-coded by me in HTML, CSS, JS, and a bit of Go. It is responsive and is designed to be viewed on any screen resolution. Built using Hugo, (a Static Site Generator)! Currently hosted by neocities <3
+This site was hand-coded by me in HTML, CSS, JS, and a bit of golang templates. It is responsive and is designed to be viewed on any screen resolution. Built using Hugo, (a Static Site Generator)! Currently hosted by neocities <3
 
 ### Summary of Pages
 - **Bottlecaps:** browse my bottlecap collection!

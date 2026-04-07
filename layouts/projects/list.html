@@ -1,0 +1,11 @@
+{{ define "main" }}
+<div class="basic middle-content trans-box">
+    <h1>Projects</h1>
+    Posts about things I'm working on
+    {{ range .Pages }}
+        <div class="trans-box">
+        <a href="{{ .RelPermalink }}">{{ .Title }} ({{ .Params.date.Format "01-02-2006" }})</a>
+        </div>
+    {{ end }}
+</div>
+{{ end }}
