@@ -8,7 +8,13 @@
     <loc>https://amameow.neocities.org/projects/my-first-post/</loc>
     <lastmod>2026-04-07T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://amameow.neocities.org/tags/programming/</loc>
+    <lastmod>2026-04-07T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://amameow.neocities.org/projects/</loc>
+    <lastmod>2026-04-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://amameow.neocities.org/tags/</loc>
     <lastmod>2026-04-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://amameow.neocities.org/about/</loc>
@@ -36,7 +42,5 @@
     <loc>https://amameow.neocities.org/recipes/peanut_butter_cookies/</loc>
   </url><url>
     <loc>https://amameow.neocities.org/recipes/</loc>
-  </url><url>
-    <loc>https://amameow.neocities.org/tags/</loc>
   </url>
 </urlset>
